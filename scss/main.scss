@@ -24,7 +24,7 @@ body{
     margin: 0 auto;
 }
 
-/*estilos de los textos*/
+/*Stili dei testi*/
 
 h2{
     font-size: 1.45rem;
@@ -122,8 +122,8 @@ footer a img{
     padding: 12px 0;
 }
 
-/* estilos de la pagina de inicio */
-/* seccion 1*/
+/* Stili della home page*/
+/* Sezione prima*/
 article > section:nth-child(1){
     background-image: linear-gradient(rgba(26,26,50,0.9), rgba(26,26,50,0.9)),url(/assets/images/gavel-book.jpeg);
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ article > section:nth-child(1){
     color: #000;
 }
 
-/*seccion 2*/
+/*sezione 2*/
 
 article>section:nth-child(2){
     background-color: #f3f3f8;
@@ -183,7 +183,7 @@ article>section:nth-child(2){
 #sezioneSeconda div{
     padding: 0 0.5em;
     align-self: center;
-    flex-basis: 50%; /*tama;o de la columna*/
+    flex-basis: 50%; /*Dimensione della colonna*/
 }
 
 #sezioneSeconda img{
@@ -208,7 +208,7 @@ article>section:nth-child(2){
     color: #000;
 }
 
-/*seccion tres */
+/*Sezione 3 */
 
 article>section:nth-child(3){
     text-align: center;
@@ -245,11 +245,11 @@ article>section:nth-child(3){
 }
 
 
-
+/* Creiamo le regole CSS necessarie per rendere il nostro sito responsive */
 
 @media (max-width: 768px) {
     #sezioneSeconda {
-        flex-direction: column; /* Cambiamos a diseño de columna en móviles */
+        flex-direction: column; /* Passiamo a un layout a colonna sui dispositivi mobili */
         text-align: center;
     }
 
@@ -259,24 +259,24 @@ article>section:nth-child(3){
     }
 
     #sezioneSeconda img {
-        max-width: 90%; /* Asegura que la imagen no se desborde */
-        height: auto; /* Mantiene la proporción */
+        max-width: 90%; /* Assicura che l'immagine non trabocchi */
+        height: auto; /* Mantiene le proporzioni */
         margin-top: 20px;
     }
 
 
-
+    /* stili per il menu sticky */ 
     #navbar {
-        position: fixed; /* Hace que el navbar quede fijo */
-        top: 0; /* Se adhiere a la parte superior */
+        position: fixed; /* Rende la navbar fissa */
+        top: 0; /* Si attacca alla parte superiore. */
         left: 0;
-        width: 100%; /* Ocupa todo el ancho */
-        z-index: 1000; /* Asegura que quede encima del contenido */
-        transition: top 0.3s; /* Suaviza la animación al hacer scroll */
+        width: 100%; /*Occupa tutta la larghezza */
+        z-index: 1000; /* Assicura che rimanga sopra il contenuto */
+        transition: top 0.3s; /* Rende più fluida l'animazione durante lo scroll */
     }
     
     body {
-        padding-top: 70px; /* Añade un margen para evitar que el contenido quede oculto detrás del navbar */
+        padding-top: 70px; /* Aggiunge un margine per evitare che il contenuto venga nascosto dietro la navbar */
     }
 }
 
