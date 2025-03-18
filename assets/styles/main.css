@@ -35,6 +35,12 @@ p {
   margin-bottom: 25px;
 }
 
+/*stili per il logo*/
+.logo-img {
+  width: 130px;
+  height: 67px;
+}
+
 /*stili per il navbar*/
 #navbar {
   background-color: #10195f;
